@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(236, 236, 236);
+}
+.header {
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+.container {
+  margin: 0px auto;
+  width: 400px;
+}
+.container h4,
+h1 {
+  text-align: left;
+}
+.income-container {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+  border: 1px solid rgb(151, 146, 146);
+  border-radius: 2px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.income {
+  width: fit-content;
+  display: inline-block;
+  padding: 0px 60px 0px 60px;
+  border-right: 2px solid gray;
+}
+.expense {
+  width: fit-content;
+  display: inline-block;
+  padding: 0px 60px 0px 60px;
+}
+.income > span {
+  color: green;
+}
+.expense > span {
+  color: red;
+}
+.transHist {
+  width: 400px;
+  margin: 0 auto;
+}
+.transHist h3 {
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+.transHist ul > li {
+  margin-top: 20px;
+  list-style: none;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid rgb(151, 146, 146);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.transHist ul > li > span {
+  float: right;
+}
+#deleteButton {
+  text-align: center;
+  float: left;
+  width: 25px;
+  padding-top: 1px;
+  margin-right: 5px;
+  border: 0.5px solid lightgrey;
+  border-radius: 4px;
+  background-color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addTransaction {
+  width: 400px;
+  margin: 0 auto;
+}
+.addTransaction h3 {
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15px;
+}
+.addTransaction form > label {
+  float: left;
+}
+.addTransaction form > input {
+  width: 400px;
+  height: 40px;
+  margin: 5px 0px 15px 0px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.addTransaction form > button {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: lightseagreen;
+  border: 1px solid lightsteelblue;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
