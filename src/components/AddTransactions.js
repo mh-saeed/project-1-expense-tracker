@@ -8,15 +8,22 @@ export const AddTransactions = () => {
   const { addTransactions } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
-    e.preventDefault();
+    if (text.length === 0 || amount === 0) {
+      e.preventDefault();
+      alert(`please fill the fields!`);
+    } else {
+      const newTransaction = {
+        id: Math.floor(Math.random() * 100000000),
+        text,
+        amount: +amount,
+      };
 
-    const newTransaction = {
-      id: Math.floor(Math.random() * 100000000),
-      text,
-      amount: +amount,
-    };
+      addTransactions(newTransaction);
 
-    addTransactions(newTransaction);
+      // updating field / clearing after form submission
+      setText(" ");
+      setAmount(0);
+    }
   };
 
   return (
