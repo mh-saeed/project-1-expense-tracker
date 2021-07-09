@@ -10,6 +10,9 @@
   text-align: center;
   margin: 25px 0px 25px 0px;
 }
+.header a {
+  text-decoration-line: none;
+}
 .container {
   margin: 0px auto;
   width: 355px;
