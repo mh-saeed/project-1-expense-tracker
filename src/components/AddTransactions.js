@@ -12,6 +12,7 @@ export const AddTransactions = () => {
       e.preventDefault();
       alert(`please fill the fields!`);
     } else {
+      e.preventDefault();
       const newTransaction = {
         id: Math.floor(Math.random() * 100000000),
         text,
