@@ -54,6 +54,33 @@ h1 {
   padding-bottom: 5px;
   border-bottom: 1px solid grey;
 }
+.scrollExpense {
+  height: 290px;
+  padding-right: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* width */
+.scrollExpense::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.scrollExpense::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrollExpense::-webkit-scrollbar-thumb {
+  background: lightsteelblue;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollExpense::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
 .transHist ul > li {
   margin-top: 20px;
   list-style: none;
@@ -65,11 +92,11 @@ h1 {
 .transHist ul > li > span {
   float: right;
 }
-.amountGreen{
-border-right: 6px solid green !important;
+.amountGreen {
+  border-right: 5px solid green !important;
 }
-.amountRed{
-  border-right: 6px solid red !important;
+.amountRed {
+  border-right: 5px solid red !important;
 }
 #deleteButton {
   text-align: center;
@@ -108,7 +135,7 @@ border-right: 6px solid green !important;
 .addTransaction form > button {
   width: 355px;
   height: 50px;
-  margin-bottom: 15px;
+  margin-top: 10px;
   color: white;
   background-color: lightseagreen;
   border: 1px solid lightsteelblue;
