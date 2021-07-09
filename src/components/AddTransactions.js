@@ -26,7 +26,7 @@ export const AddTransactions = () => {
         <label htmlFor="text">Text</label>
         <br />
         <input
-          placeholder="Enter Text ..."
+          placeholder="Enter Text . . ."
           type="text"
           id="text"
           value={text}
